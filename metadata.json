@@ -1,0 +1,5 @@
+{
+  "name": "Kho Thông Minh - Nền Tảng Tự Động Hóa Quản Lý Kho",
+  "description": "Một công cụ thông minh để tự động hóa hoàn toàn việc ghi nhận dữ liệu từ Phiếu Nhập/Xuất Kho, cung cấp báo cáo tồn kho chính xác, tức thời và cảnh báo hàng sắp hết hạn sử dụng.",
+  "requestFramePermissions": []
+}
