@@ -18,7 +18,10 @@ const MasterData: React.FC = () => {
   const handleReset = () => {
     if (window.confirm("CẢNH BÁO QUAN TRỌNG:\n\nHành động này sẽ XÓA TOÀN BỘ dữ liệu (Sản phẩm, Kho, Giao dịch, Nhà cung cấp) và đưa hệ thống về trạng thái trắng ban đầu.\n\nBạn có chắc chắn muốn tiếp tục không?")) {
         resetData();
-        alert("Hệ thống đã được reset về mặc định.");
+        // Sử dụng timeout nhỏ để đảm bảo quá trình xóa storage hoàn tất trước khi reload
+        setTimeout(() => {
+             window.location.reload();
+        }, 100);
     }
   };
 
