@@ -25,6 +25,11 @@ import {
   Printer,
   Search,
   RotateCcw,
+  TrendingUp,
+  TrendingDown,
+  ArrowUpRight,
+  ArrowDownRight,
+  Info,
 } from 'lucide-react';
 
 export const HomeIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => <Home {...props} />;
@@ -51,3 +56,8 @@ export const FileIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => <Fil
 export const PrinterIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => <Printer {...props} />;
 export const SearchIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => <Search {...props} />;
 export const RotateCcwIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => <RotateCcw {...props} />;
+export const TrendingUpIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => <TrendingUp {...props} />;
+export const TrendingDownIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => <TrendingDown {...props} />;
+export const ArrowUpRightIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => <ArrowUpRight {...props} />;
+export const ArrowDownRightIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => <ArrowDownRight {...props} />;
+export const InfoIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => <Info {...props} />;
