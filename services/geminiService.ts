@@ -1,4 +1,3 @@
-
 import { GoogleGenAI, Type } from '@google/genai';
 import { ExtractedTransactionData } from '../types';
 
@@ -19,9 +18,6 @@ const fileToGenerativePart = async (file: File) => {
     inlineData: { data: await base64EncodedDataPromise, mimeType: file.type },
   };
 };
-
-// Khởi tạo Gemini API với model Flash 2.5 mới nhất
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY! });
 
 const schema: any = {
     type: Type.OBJECT,
@@ -70,6 +66,10 @@ const schema: any = {
 export type UploadMode = 'inbound' | 'outbound' | 'general';
 
 export const extractDataFromImage = async (file: File, mode: UploadMode = 'general'): Promise<ExtractedTransactionData> => {
+    // Initialization: Always use const ai = new GoogleGenAI({apiKey: process.env.API_KEY});
+    // Assume process.env.API_KEY is pre-configured and valid.
+    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+
     const imagePart = await fileToGenerativePart(file);
 
     let systemInstruction = "";
